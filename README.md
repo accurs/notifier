@@ -74,4 +74,3 @@ main · 1 new commit · accurs
 ```
 
 The branch name links to that branch. The short hash links to the commit. A push with several commits is one message.
-# telegram-bot
