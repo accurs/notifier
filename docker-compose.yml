@@ -1,0 +1,10 @@
+services:
+  notifier:
+    build: .
+    env_file: .env
+    ports:
+      - "${WEBHOOK_PORT}:${WEBHOOK_PORT}"
+    volumes:
+      # Host directory is often root-owned; the entrypoint chowns it to bot.
+      - ./data:/app/data
+    restart: unless-stopped
